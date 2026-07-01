@@ -35,6 +35,11 @@ public class QueueCaseStudy {
             }
         }
 
+        System.out.println("ผู้ป่วยใหม่เพิ่ม");
+        patientQueue.add("P006");
+        patientQueue.add("P007");
+        System.out.println("เพิ่ม P006 และ P007 เข้า Queue แล้ว");
+
         System.out.println("ตรวจสอบผู้ป่วยคนถัดไป");
         if (!patientQueue.isEmpty()) {
             System.out.println("ผู้ป่วยคนถัดไปที่จะได้รับบริการคือ: " + patientQueue.peek());
